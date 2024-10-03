@@ -27,6 +27,19 @@ to quickly create a Cobra application.`,
 func Execute() {
 	rootCmd.AddCommand(SignUp())
 	rootCmd.AddCommand(SignIn())
+	rootCmd.AddCommand(HelloWorld())
+	rootCmd.AddCommand(AddNote())
+	rootCmd.AddCommand(GetNotes())
+	rootCmd.AddCommand(GetNote())
+	rootCmd.AddCommand(AddCreds())
+	rootCmd.AddCommand(GetCreds())
+	rootCmd.AddCommand(GetAllCreds())
+	rootCmd.AddCommand(AddCard())
+	rootCmd.AddCommand(GetCards())
+	rootCmd.AddCommand(GetCard())
+	rootCmd.AddCommand(AddFile())
+	rootCmd.AddCommand(GetFile())
+	rootCmd.AddCommand(GetFiles())
 
 	err := rootCmd.Execute()
 	if err != nil {
